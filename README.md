@@ -13,8 +13,14 @@ It's an application where you can find the interesting photos by the search word
 1. Download repository and install dependencies -> npm install
 2. Launch the application -> npm start.
 
+Photo 1
+
 ![](./images/gallery-first.png)
 
+Photo 2
+
 ![](./images/gallery-second.png)
+
+Photo 3
 
 ![](./images/gallery-third.png)

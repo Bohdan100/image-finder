@@ -1,1 +1,2 @@
-export * from "./images-API";
+export { fetchImages } from "./images-API";
+export { getThemeStorage, changeThemeStorage } from "./themeStorage";
