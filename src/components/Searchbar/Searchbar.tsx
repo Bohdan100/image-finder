@@ -71,6 +71,9 @@ export const SearchBar: FC<ISearchBarProps> = ({
             </Title>
             <ImageSearchIcon
               sx={{ fontSize: 28, display: { xs: "none", sm: "block" } }}
+              role="icon"
+              aria-labelledby="title icon"
+              aria-describedby="title icon without actions"
             />
           </TitleWrap>
 
@@ -114,6 +117,9 @@ export const SearchBar: FC<ISearchBarProps> = ({
                       color: "#d9d9d9",
                     },
                   }}
+                  role="icon"
+                  aria-labelledby="search icon"
+                  aria-describedby="search icon to find images by name"
                 />
               </ButtonFrom>
             </FormWrap>
@@ -122,9 +128,19 @@ export const SearchBar: FC<ISearchBarProps> = ({
           <ThemeWrap sx={{ width: { xs: 0, sm: 150, md: 220 } }}>
             <IconButton onClick={() => toggleTheme()} color="inherit">
               {theme.palette.mode === "light" ? (
-                <LightModeIcon sx={{ fontSize: 30 }} />
+                <LightModeIcon
+                  sx={{ fontSize: 30 }}
+                  role="icon"
+                  aria-labelledby="light theme icon"
+                  aria-describedby="light theme icon, you can change theme"
+                />
               ) : (
-                <DarkModeIcon sx={{ fontSize: 30 }} />
+                <DarkModeIcon
+                  sx={{ fontSize: 30 }}
+                  role="icon"
+                  aria-labelledby="dark theme icon"
+                  aria-describedby="dark theme icon, you can change theme"
+                />
               )}
             </IconButton>
           </ThemeWrap>
